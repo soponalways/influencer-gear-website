@@ -152,6 +152,71 @@ nav .logo {
     color: #E02C6D;
 }
 
+/* featured section related styles */
+.featured-section{
+    max-width: 1100px;
+    margin: 2rem auto;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.featured-img{
+    border-radius: 7px;
+}
+/* .featured-img img{
+    width: 100%;
+} */
+.featured-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.featured-title{
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+.featured-description{
+    color: #6C6C6C;
+    font-weight: 700;
+}
+.featured-button button {
+    background-color: #E02C6D;
+    border: none;
+    padding: 10px 24px;
+}
+.featured-button button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+/* Footer section related Styles */
+ footer{
+    background-color: #0A0826;
+
+ }
+ .footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 3.1rem 0;
+ }
+ .footer-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ffffff;
+ }
+ .footer-description{
+    color: #D9DBE1;
+ }
+ .footer-icons{
+    color: white;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+ }
+
 /* Mobail devices */
 @media screen and (max-width:576px) {
 
@@ -198,6 +263,22 @@ nav .logo {
         grid-template-columns:1fr;
         /* gap: 1.5rem; */
         margin-top: 30px;
+    }
+
+    /* feature section related styles  */
+    .featured-section{
+        flex-direction: column-reverse;
+    }
+    .featured-content{
+        align-items: center;
+    }
+    .featured-title{
+         font-size: 1.5rem;
+         text-align: center;
+    }
+    .featured-description{
+        font-size: 14px;
+        text-align: center;
     }
 }
 
@@ -252,5 +333,20 @@ nav .logo {
         grid-template-columns: 2fr;
         margin: 0;
         margin-top: 30px;
+    }
+    /* featured related styles */
+    .featured-section{
+        gap: 20px;
+    }
+    .featured-content{
+        align-items: center;
+    }
+    .featured-title{
+         font-size: 1.5rem;
+         text-align: center;
+    }
+    .featured-description{
+        font-size: 14px;
+        text-align: center;
     }
 }
