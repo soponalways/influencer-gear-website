@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Shared style  */
+
+
+/* Header Style */
+header{
+    max-width: 1200px;
+    margin: 1.4rem auto;
+}
+/* nav bar related styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navlinks{
+    display: flex;
+    margin: 8px 0;
+    gap: 2.1rem;
+}
+
+.navlink{
+    list-style: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
