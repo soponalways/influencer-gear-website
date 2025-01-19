@@ -96,6 +96,62 @@ nav .logo {
     justify-content: space-between;
 }
 
+/* main section related styles */
+
+/* Popular collection related styles */
+.popular-collection{
+    max-width: 1050px;
+    margin: 2.5rem auto;
+}
+.collection-title{
+    font-weight: 600;
+    font-size: 1.74rem;
+    text-align: center;
+}
+.popular-collection .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 30px;
+}
+.popular-collection .cards .card{
+    background-color: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+.popular-collection .cards .card .card-description{
+    font-family: "Inter", serif;
+    margin-top: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    max-width: 200px;
+    color: #787885;
+}
+.popular-collection .card-price{
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+    font-family: "Inter", serif;
+    font-size: 1.5rem;
+    margin-top: 6px;
+}
+
+.see-more-btn{
+    font-weight: 700;
+    background-color: white;
+    border: none;
+    margin-top: 2rem;
+    
+}
+.see-more-btn a{
+    text-decoration: none;
+    color: #E02C6D;
+}
+
 /* Mobail devices */
 @media screen and (max-width:576px) {
 
@@ -129,6 +185,19 @@ nav .logo {
         gap: 10px;
         align-items: center;
         justify-content: space-around;
+    }
+
+    /* collection related */
+    .popular-collection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .popular-collection .cards{
+        display: grid;
+        grid-template-columns:1fr;
+        /* gap: 1.5rem; */
+        margin-top: 30px;
     }
 }
 
@@ -171,5 +240,17 @@ nav .logo {
         gap: 10px;
         align-items: center;
         justify-content: space-between;
+    }
+
+    /* collection related */
+    .popular-collection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .popular-collection .cards{
+        grid-template-columns: 2fr;
+        margin: 0;
+        margin-top: 30px;
     }
 }
