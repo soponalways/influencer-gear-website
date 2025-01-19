@@ -81,6 +81,21 @@ nav .logo {
 .banner-img{
     width: 100%;
 }
+
+/* Company section related styles */
+.company{
+    max-width: 1100px;
+    margin: 3.75rem auto;
+    border-image: linear-gradient(to right, #C0CCDA 10%, #C0CCDA 60% , #C0CCDA 10%) 1;
+    border-style: solid;
+}
+.company-logos{
+    padding: 10px  10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* Mobail devices */
 @media screen and (max-width:576px) {
 
@@ -106,7 +121,15 @@ nav .logo {
     .banner-content{
         text-align: center;
     }
-    
+    /* company related */
+    .company-logos{
+        padding: 10px  10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
 
 
@@ -138,5 +161,15 @@ nav .logo {
     }
     .banner-content{
         text-align: center;
+    }
+
+    /* Company related */
+    .company-logos{
+        padding: 10px  10px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
     }
 }
