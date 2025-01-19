@@ -16,7 +16,7 @@ header {
 /* nav bar related styles */
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -43,7 +43,44 @@ nav .logo {
 }
 
 
+/* Banner section related styles */
+.banner{
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content{
+    max-width: 36rem;
+}
+.banner-title{
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+.banner-description{
+    font-weight: 600;
+    margin: 1rem 0;
+}
+.banner-btn{
+    background-color: #E02C6D;
+    padding: 10px 1.25rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 2.5rem;
+    border: none;
+    color: white;
+    width: max-content;
+}
 
+.banner-img-container{
+    background-image: url(./images/Circle\ design.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.banner-img{
+    width: 100%;
+}
 /* Mobail devices */
 @media screen and (max-width:576px) {
 
@@ -54,10 +91,22 @@ nav .logo {
     .home-link {
         display: none;
     }
+    nav{
+        justify-content: space-around;
+    }
 
     nav .ham-burger{
         display: block;
     }
+
+    /* banner */
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    
 }
 
 
@@ -71,6 +120,7 @@ nav .logo {
         display: flex;
     }
 
+
     nav .logo{
         font-size: 1.25rem;
     }
@@ -80,5 +130,13 @@ nav .logo {
         margin: 8px 0;
         gap: 1.1rem;
         align-items: center;
+    }
+
+    /* Banner  */
+    .banner-content{
+        width: 60%;
+    }
+    .banner-content{
+        text-align: center;
     }
 }
